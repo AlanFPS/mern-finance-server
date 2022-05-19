@@ -18,6 +18,7 @@ mongoose
   })
   .catch((error) => {
     console.log(
-      'Mongodb connection error. Make sure mongob is running.' + error
+      'Mongodb connection error. Make sure brew services start mongodb-communityb is running.' +
+        error
     )
   })

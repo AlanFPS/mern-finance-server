@@ -2,13 +2,14 @@
   "name": "express-typescript-starter",
   "version": "0.1.0",
   "description": "A starting point for Node.js express apps with TypeScript",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/Microsoft/TypeScript-Node-Starter"
   },
   "engines": {
-    "node": "16.14.2",
-    "npm": "8.5.0"
+    "node": "17.x",
+    "npm": "8.3.x"
   },
   "author": "Bowden Kelly",
   "license": "MIT",
@@ -40,7 +41,6 @@
     "axios": "^0.27.2",
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
-    "brew": "^0.0.8",
     "cloudinary": "^1.28.1",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
@@ -56,6 +56,7 @@
     "mongodb-memory-server": "^6.3.1",
     "mongoose": "^5.13.14",
     "nodemailer": "^6.4.3",
+    "nvm": "^0.0.4",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
