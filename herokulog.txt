@@ -1,0 +1,379 @@
+$ heroku logs --tail
+2022-05-19T20:41:38.238251+00:00 app[api]: Release v1 created by user alan_ps@hotmail.com
+2022-05-19T20:41:38.238251+00:00 app[api]: Initial release by user alan_ps@hotmail.com
+2022-05-19T20:41:38.552857+00:00 app[api]: Enable Logplex by user alan_ps@hotmail.com
+2022-05-19T20:41:38.552857+00:00 app[api]: Release v2 created by user alan_ps@hotmail.com
+2022-05-19T20:43:06.000000+00:00 app[api]: Build started by user alan_ps@hotmail.com
+2022-05-19T20:44:05.191611+00:00 app[api]: Release v3 created by user alan_ps@hotmail.com
+2022-05-19T20:44:05.191611+00:00 app[api]: Deploy 7d2d8c0b by user alan_ps@hotmail.com
+2022-05-19T20:44:05.211011+00:00 app[api]: Scaled to web@1:Free by user alan_ps@hotmail.com
+2022-05-19T20:44:08.996758+00:00 heroku[web.1]: Starting process with command `node dist/server.js`
+2022-05-19T20:44:09.841729+00:00 app[web.1]: node:internal/modules/cjs/loader:936
+2022-05-19T20:44:09.841739+00:00 app[web.1]: throw err;
+2022-05-19T20:44:09.841740+00:00 app[web.1]: ^
+2022-05-19T20:44:09.841740+00:00 app[web.1]:
+2022-05-19T20:44:09.841740+00:00 app[web.1]: Error: Cannot find module '/app/dist/server.js'
+2022-05-19T20:44:09.841741+00:00 app[web.1]: at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:1
+2022-05-19T20:44:09.841742+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+2022-05-19T20:44:09.841742+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_m
+2022-05-19T20:44:09.841742+00:00 app[web.1]: at node:internal/main/run_main_module:17:47 {
+2022-05-19T20:44:09.841743+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2022-05-19T20:44:09.841743+00:00 app[web.1]: requireStack: []
+2022-05-19T20:44:09.841743+00:00 app[web.1]: }
+2022-05-19T20:44:09.978885+00:00 heroku[web.1]: Process exited with status 1
+2022-05-19T20:44:10.273771+00:00 heroku[web.1]: State changed from starting to crashed
+2022-05-19T20:44:10.283132+00:00 heroku[web.1]: State changed from crashed to starting
+2022-05-19T20:44:13.000000+00:00 app[api]: Build succeeded
+2022-05-19T20:44:13.932863+00:00 heroku[web.1]: Starting process with command `node dist/server.js`
+2022-05-19T20:44:15.399238+00:00 app[web.1]: node:internal/modules/cjs/loader:936
+2022-05-19T20:44:15.399250+00:00 app[web.1]: throw err;
+2022-05-19T20:44:15.399251+00:00 app[web.1]: ^
+2022-05-19T20:44:15.399251+00:00 app[web.1]:
+2022-05-19T20:44:15.399251+00:00 app[web.1]: Error: Cannot find module '/app/dist/server.js'
+2022-05-19T20:44:15.399252+00:00 app[web.1]: at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:1
+2022-05-19T20:44:15.399253+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+2022-05-19T20:44:15.399253+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_m
+2022-05-19T20:44:15.399254+00:00 app[web.1]: at node:internal/main/run_main_module:17:47 {
+2022-05-19T20:44:15.399254+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2022-05-19T20:44:15.399254+00:00 app[web.1]: requireStack: []
+2022-05-19T20:44:15.399255+00:00 app[web.1]: }
+2022-05-19T20:44:15.508461+00:00 heroku[web.1]: Process exited with status 1
+2022-05-19T20:44:15.598414+00:00 heroku[web.1]: State changed from starting to crashed
+2022-05-19T20:44:19.407033+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-fina= status=503 bytes= protocol=https
+2022-05-19T20:44:19.693642+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" hosct= service= status=503 bytes= protocol=https
+2022-05-19T20:44:49.338264+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-fina= status=503 bytes= protocol=https
+2022-05-19T20:44:49.632918+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" hosct= service= status=503 bytes= protocol=https
+2022-05-19T20:44:50.360125+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-fina= status=503 bytes= protocol=https
+2022-05-19T20:44:50.633023+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" hosct= service= status=503 bytes= protocol=https
+2022-05-19T20:44:51.081849+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-fina= status=503 bytes= protocol=https
+2022-05-19T20:44:51.385366+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" hosct= service= status=503 bytes= protocol=https
+2022-05-19T20:44:53.942515+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-fina= status=503 bytes= protocol=https
+2022-05-19T20:44:54.243475+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" hosct= service= status=503 bytes= protocol=https
+2022-05-19T20:44:55.022729+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-fina= status=503 bytes= protocol=https
+2022-05-19T20:44:55.368885+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" hosct= service= status=503 bytes= protocol=https
+2022-05-19T20:50:24.000000+00:00 app[api]: Build started by user alan_ps@hotmail.com
+2022-05-19T20:51:37.039338+00:00 heroku[web.1]: State changed from crashed to starting
+2022-05-19T20:51:40.724128+00:00 heroku[web.1]: Starting process with command `node src/server.js`
+2022-05-19T20:51:42.278089+00:00 app[web.1]: node:internal/modules/cjs/loader:936
+2022-05-19T20:51:42.278101+00:00 app[web.1]: throw err;
+2022-05-19T20:51:42.278102+00:00 app[web.1]: ^
+2022-05-19T20:51:42.278102+00:00 app[web.1]:
+2022-05-19T20:51:42.278102+00:00 app[web.1]: Error: Cannot find module '/app/src/server.js'
+2022-05-19T20:51:42.278103+00:00 app[web.1]: at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:1
+2022-05-19T20:51:42.278103+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+2022-05-19T20:51:42.278103+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_m
+2022-05-19T20:51:42.278104+00:00 app[web.1]: at node:internal/main/run_main_module:17:47 {
+2022-05-19T20:51:42.278104+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2022-05-19T20:51:42.278105+00:00 app[web.1]: requireStack: []
+2022-05-19T20:51:42.278105+00:00 app[web.1]: }
+2022-05-19T20:51:42.406872+00:00 heroku[web.1]: Process exited with status 1
+2022-05-19T20:51:42.537820+00:00 heroku[web.1]: State changed from starting to crashed
+2022-05-19T20:51:59.191581+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-fina= status=503 bytes= protocol=https
+2022-05-19T20:51:59.542754+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" hosct= service= status=503 bytes= protocol=https
+2022-05-19T20:51:36.743379+00:00 app[api]: Release v4 created by user alan_ps@hotmail.com
+2022-05-19T20:51:36.743379+00:00 app[api]: Deploy b2d579d3 by user alan_ps@hotmail.com
+2022-05-19T20:51:45.000000+00:00 app[api]: Build succeeded
+-
+$ heroku logs --tail
+2022-05-19T20:44:09.841741+00:00 app[web.1]: at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:1
+2022-05-19T20:44:09.841742+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+2022-05-19T20:44:09.841742+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_m
+2022-05-19T20:44:09.841742+00:00 app[web.1]: at node:internal/main/run_main_module:17:47 {
+2022-05-19T20:44:09.841743+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2022-05-19T20:44:09.841743+00:00 app[web.1]: requireStack: []
+2022-05-19T20:44:09.841743+00:00 app[web.1]: }
+2022-05-19T20:44:09.978885+00:00 heroku[web.1]: Process exited with status 1
+2022-05-19T20:44:10.273771+00:00 heroku[web.1]: State changed from starting to crashed
+2022-05-19T20:44:10.283132+00:00 heroku[web.1]: State changed from crashed to starting
+2022-05-19T20:44:13.000000+00:00 app[api]: Build succeeded
+2022-05-19T20:44:13.932863+00:00 heroku[web.1]: Starting process with command `node dist/server.js`
+2022-05-19T20:44:15.399238+00:00 app[web.1]: node:internal/modules/cjs/loader:936
+2022-05-19T20:44:15.399250+00:00 app[web.1]: throw err;
+2022-05-19T20:44:15.399251+00:00 app[web.1]: ^
+2022-05-19T20:44:15.399251+00:00 app[web.1]:
+2022-05-19T20:44:15.399251+00:00 app[web.1]: Error: Cannot find module '/app/dist/server.js'
+2022-05-19T20:44:15.399252+00:00 app[web.1]: at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:1
+2022-05-19T20:44:15.399253+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+2022-05-19T20:44:15.399253+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_m
+2022-05-19T20:44:15.399254+00:00 app[web.1]: at node:internal/main/run_main_module:17:47 {
+2022-05-19T20:44:15.399254+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2022-05-19T20:44:15.399254+00:00 app[web.1]: requireStack: []
+2022-05-19T20:44:15.399255+00:00 app[web.1]: }
+2022-05-19T20:44:15.508461+00:00 heroku[web.1]: Process exited with status 1
+2022-05-19T20:44:15.598414+00:00 heroku[web.1]: State changed from starting to crashed
+2022-05-19T20:44:19.407033+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-fina= status=503 bytes= protocol=https
+2022-05-19T20:44:19.693642+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" hosct= service= status=503 bytes= protocol=https
+2022-05-19T20:44:49.338264+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-fina= status=503 bytes= protocol=https
+2022-05-19T20:44:49.632918+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" hosct= service= status=503 bytes= protocol=https
+2022-05-19T20:44:50.360125+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-fina= status=503 bytes= protocol=https
+2022-05-19T20:44:50.633023+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" hosct= service= status=503 bytes= protocol=https
+2022-05-19T20:44:51.081849+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-fina= status=503 bytes= protocol=https
+2022-05-19T20:44:51.385366+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" hosct= service= status=503 bytes= protocol=https
+2022-05-19T20:44:53.942515+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-fina= status=503 bytes= protocol=https
+2022-05-19T20:44:54.243475+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" hosct= service= status=503 bytes= protocol=https
+2022-05-19T20:44:55.022729+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-fina= status=503 bytes= protocol=https
+2022-05-19T20:44:55.368885+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" hosct= service= status=503 bytes= protocol=https
+2022-05-19T20:50:24.000000+00:00 app[api]: Build started by user alan_ps@hotmail.com
+2022-05-19T20:51:36.743379+00:00 app[api]: Release v4 created by user alan_ps@hotmail.com
+2022-05-19T20:51:36.743379+00:00 app[api]: Deploy b2d579d3 by user alan_ps@hotmail.com
+2022-05-19T20:51:37.039338+00:00 heroku[web.1]: State changed from crashed to starting
+2022-05-19T20:51:40.724128+00:00 heroku[web.1]: Starting process with command `node src/server.js`
+2022-05-19T20:51:42.278089+00:00 app[web.1]: node:internal/modules/cjs/loader:936
+2022-05-19T20:51:42.278101+00:00 app[web.1]: throw err;
+2022-05-19T20:51:42.278102+00:00 app[web.1]: ^
+2022-05-19T20:51:42.278102+00:00 app[web.1]:
+2022-05-19T20:51:42.278102+00:00 app[web.1]: Error: Cannot find module '/app/src/server.js'
+2022-05-19T20:51:42.278103+00:00 app[web.1]: at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:1
+2022-05-19T20:51:42.278103+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+2022-05-19T20:51:42.278103+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_m
+2022-05-19T20:51:42.278104+00:00 app[web.1]: at node:internal/main/run_main_module:17:47 {
+2022-05-19T20:51:42.278104+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2022-05-19T20:51:42.278105+00:00 app[web.1]: requireStack: []
+2022-05-19T20:51:42.278105+00:00 app[web.1]: }
+2022-05-19T20:51:42.406872+00:00 heroku[web.1]: Process exited with status 1
+2022-05-19T20:51:42.537820+00:00 heroku[web.1]: State changed from starting to crashed
+2022-05-19T20:51:45.000000+00:00 app[api]: Build succeeded
+2022-05-19T20:51:59.191581+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-fina= status=503 bytes= protocol=https
+2022-05-19T20:51:59.542754+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" hosct= service= status=503 bytes= protocol=https
+2022-05-19T20:55:44.000000+00:00 app[api]: Build started by user alan_ps@hotmail.com
+2022-05-19T20:56:57.171115+00:00 app[api]: Release v5 created by user alan_ps@hotmail.com
+2022-05-19T20:56:57.171115+00:00 app[api]: Deploy 50f7020b by user alan_ps@hotmail.com
+2022-05-19T20:56:57.456200+00:00 heroku[web.1]: State changed from crashed to starting
+2022-05-19T20:57:01.040043+00:00 heroku[web.1]: Starting process with command `node src/server.ts`
+2022-05-19T20:57:02.476604+00:00 app[web.1]: /app/src/server.ts:1
+2022-05-19T20:57:02.476617+00:00 app[web.1]: import mongoose from 'mongoose'
+2022-05-19T20:57:02.476618+00:00 app[web.1]: ^^^^^^
+2022-05-19T20:57:02.476618+00:00 app[web.1]:
+2022-05-19T20:57:02.476619+00:00 app[web.1]: SyntaxError: Cannot use import statement outside a module
+2022-05-19T20:57:02.476619+00:00 app[web.1]: at Object.compileFunction (node:vm:352:18)
+2022-05-19T20:57:02.476620+00:00 app[web.1]: at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+2022-05-19T20:57:02.476620+00:00 app[web.1]: at Module._compile (node:internal/modules/cjs/loader:1067:27)
+2022-05-19T20:57:02.476621+00:00 app[web.1]: at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+2022-05-19T20:57:02.476621+00:00 app[web.1]: at Module.load (node:internal/modules/cjs/loader:981:32)
+2022-05-19T20:57:02.476622+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+2022-05-19T20:57:02.476622+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_m
+2022-05-19T20:57:02.476622+00:00 app[web.1]: at node:internal/main/run_main_module:17:47
+2022-05-19T20:57:02.581537+00:00 heroku[web.1]: Process exited with status 1
+2022-05-19T20:57:02.684729+00:00 heroku[web.1]: State changed from starting to crashed
+2022-05-19T20:57:02.687808+00:00 heroku[web.1]: State changed from crashed to starting
+2022-05-19T20:57:05.000000+00:00 app[api]: Build succeeded
+2022-05-19T20:57:06.083867+00:00 heroku[web.1]: Starting process with command `node src/server.ts`
+2022-05-19T20:57:07.124485+00:00 app[web.1]: /app/src/server.ts:1
+2022-05-19T20:57:07.124500+00:00 app[web.1]: import mongoose from 'mongoose'
+2022-05-19T20:57:07.124501+00:00 app[web.1]: ^^^^^^
+2022-05-19T20:57:07.124501+00:00 app[web.1]:
+2022-05-19T20:57:07.124502+00:00 app[web.1]: SyntaxError: Cannot use import statement outside a module
+
+2022-05-19T20:57:07.124504+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:822:12) 12)                                                                                                         odules/run_m
+2022-05-19T20:57:07.124504+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+2022-05-19T20:57:07.124505+00:00 app[web.1]: at node:internal/main/run_main_module:17:47
+2022-05-19T20:57:07.249482+00:00 heroku[web.1]: Process exited with status 1                                    ern-fina
+2022-05-19T20:57:07.344144+00:00 heroku[web.1]: State changed from starting to crashed                      st=ms=503 by
+2022-05-19T20:57:13.399155+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" hoconnst=mern-finance-server.herokuapp.com request_id=98fa65e6-ece6-42ff-8b62-84f19379249c fwd="104.219.179.22" dy    ico" hosno= connect= service= status=503 bytes= protocol=https                                                      con.vice= st
+2022-05-19T20:57:13.711102+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favi.22"con.ico" host=mern-finance-server.herokuapp.com request_id=2caa9119-e1ff-4f17-866a-4b476d010dcd fwd="104.219.179.22" dyno= connect= service= status=503 bytes= protocol=https
+-
+$ heroku logs --tail
+2022-05-19T20:51:42.278103+00:00 app[web.1]: at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+2022-05-19T20:51:42.278103+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+2022-05-19T20:51:42.278103+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+2022-05-19T20:51:42.278104+00:00 app[web.1]: at node:internal/main/run_main_module:17:47 {
+2022-05-19T20:51:42.278104+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2022-05-19T20:51:42.278105+00:00 app[web.1]: requireStack: []
+2022-05-19T20:51:42.278105+00:00 app[web.1]: }
+2022-05-19T20:51:42.406872+00:00 heroku[web.1]: Process exited with status 1
+2022-05-19T20:51:42.537820+00:00 heroku[web.1]: State changed from starting to crashed
+2022-05-19T20:51:45.000000+00:00 app[api]: Build succeeded
+2022-05-19T20:51:59.191581+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-finance-server.herokuapp.com request_id=3c047eed-6fa2-49f5-917b-772e3d1d35d8 fwd="104.219.179.22" dyno= connect= service= status=503 bytes= protocol=https
+2022-05-19T20:51:59.542754+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=mern-finance-server.herokuapp.com request_id=7681d033-2ef8-49ba-94ab-e51726769b6b fwd="104.219.179.22" dyno= connect= service= status=503 bytes= protocol=https
+2022-05-19T20:55:44.000000+00:00 app[api]: Build started by user alan_ps@hotmail.com
+2022-05-19T20:56:57.171115+00:00 app[api]: Release v5 created by user alan_ps@hotmail.com
+2022-05-19T20:56:57.171115+00:00 app[api]: Deploy 50f7020b by user alan_ps@hotmail.com
+2022-05-19T20:56:57.456200+00:00 heroku[web.1]: State changed from crashed to starting
+2022-05-19T20:57:01.040043+00:00 heroku[web.1]: Starting process with command `node src/server.ts`
+2022-05-19T20:57:02.476604+00:00 app[web.1]: /app/src/server.ts:1
+2022-05-19T20:57:02.476617+00:00 app[web.1]: import mongoose from 'mongoose'
+2022-05-19T20:57:02.476618+00:00 app[web.1]: ^^^^^^
+2022-05-19T20:57:02.476618+00:00 app[web.1]:
+2022-05-19T20:57:02.476619+00:00 app[web.1]: SyntaxError: Cannot use import statement outside a module      
+2022-05-19T20:57:02.476619+00:00 app[web.1]: at Object.compileFunction (node:vm:352:18)
+2022-05-19T20:57:02.476620+00:00 app[web.1]: at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+2022-05-19T20:57:02.476620+00:00 app[web.1]: at Module._compile (node:internal/modules/cjs/loader:1067:27)  
+2022-05-19T20:57:02.476621+00:00 app[web.1]: at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+2022-05-19T20:57:02.476621+00:00 app[web.1]: at Module.load (node:internal/modules/cjs/loader:981:32)       
+2022-05-19T20:57:02.476622+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+2022-05-19T20:57:02.476622+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+2022-05-19T20:57:02.476622+00:00 app[web.1]: at node:internal/main/run_main_module:17:47
+2022-05-19T20:57:02.581537+00:00 heroku[web.1]: Process exited with status 1
+2022-05-19T20:57:02.684729+00:00 heroku[web.1]: State changed from starting to crashed
+2022-05-19T20:57:02.687808+00:00 heroku[web.1]: State changed from crashed to starting
+2022-05-19T20:57:05.000000+00:00 app[api]: Build succeeded
+2022-05-19T20:57:06.083867+00:00 heroku[web.1]: Starting process with command `node src/server.ts`
+2022-05-19T20:57:07.124485+00:00 app[web.1]: /app/src/server.ts:1
+2022-05-19T20:57:07.124500+00:00 app[web.1]: import mongoose from 'mongoose'
+2022-05-19T20:57:07.124501+00:00 app[web.1]: ^^^^^^
+2022-05-19T20:57:07.124501+00:00 app[web.1]: 
+2022-05-19T20:57:07.124502+00:00 app[web.1]: SyntaxError: Cannot use import statement outside a module      
+2022-05-19T20:57:07.124502+00:00 app[web.1]: at Object.compileFunction (node:vm:352:18)
+2022-05-19T20:57:07.124502+00:00 app[web.1]: at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+2022-05-19T20:57:07.124503+00:00 app[web.1]: at Module._compile (node:internal/modules/cjs/loader:1067:27)  
+2022-05-19T20:57:07.124503+00:00 app[web.1]: at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+2022-05-19T20:57:07.124504+00:00 app[web.1]: at Module.load (node:internal/modules/cjs/loader:981:32)       
+2022-05-19T20:57:07.124504+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+2022-05-19T20:57:07.124504+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+2022-05-19T20:57:07.124505+00:00 app[web.1]: at node:internal/main/run_main_module:17:47
+2022-05-19T20:57:07.249482+00:00 heroku[web.1]: Process exited with status 1
+2022-05-19T20:57:07.344144+00:00 heroku[web.1]: State changed from starting to crashed
+2022-05-19T20:57:13.399155+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-finance-server.herokuapp.com request_id=98fa65e6-ece6-42ff-8b62-84f19379249c fwd="104.219.179.22" dyno= connect= service= status=503 bytes= protocol=https
+2022-05-19T20:57:13.711102+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=mern-finance-server.herokuapp.com request_id=2caa9119-e1ff-4f17-866a-4b476d010dcd fwd="104.219.179.22" dyno= connect= service= status=503 bytes= protocol=https
+2022-05-19T21:00:15.000000+00:00 app[api]: Build started by user alan_ps@hotmail.com
+2022-05-19T21:01:21.175386+00:00 app[api]: Deploy 1da7cf0a by user alan_ps@hotmail.com
+2022-05-19T21:01:21.175386+00:00 app[api]: Release v6 created by user alan_ps@hotmail.com
+2022-05-19T21:01:22.133744+00:00 heroku[web.1]: State changed from crashed to starting
+2022-05-19T21:01:25.640539+00:00 heroku[web.1]: Starting process with command `node src/server.ts`
+2022-05-19T21:01:26.490117+00:00 app[web.1]: /app/src/server.ts:1
+2022-05-19T21:01:26.490127+00:00 app[web.1]: import mongoose from 'mongoose'
+2022-05-19T21:01:26.490127+00:00 app[web.1]: ^^^^^^
+2022-05-19T21:01:26.490128+00:00 app[web.1]:
+2022-05-19T21:01:26.490128+00:00 app[web.1]: SyntaxError: Cannot use import statement outside a module      
+2022-05-19T21:01:26.490128+00:00 app[web.1]: at Object.compileFunction (node:vm:352:18)
+2022-05-19T21:01:26.490129+00:00 app[web.1]: at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+2022-05-19T21:01:26.490129+00:00 app[web.1]: at Module._compile (node:internal/modules/cjs/loader:1067:27)  
+2022-05-19T21:01:26.490130+00:00 app[web.1]: at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+2022-05-19T21:01:26.490130+00:00 app[web.1]: at Module.load (node:internal/modules/cjs/loader:981:32)       
+2022-05-19T21:01:26.490131+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+2022-05-19T21:01:26.490131+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+2022-05-19T21:01:26.490132+00:00 app[web.1]: at node:internal/main/run_main_module:17:47
+2022-05-19T21:01:26.615123+00:00 heroku[web.1]: Process exited with status 1
+2022-05-19T21:01:26.908696+00:00 heroku[web.1]: State changed from starting to crashed
+2022-05-19T21:01:29.000000+00:00 app[api]: Build succeeded
+2022-05-19T21:04:19.000000+00:00 app[api]: Build started by user alan_ps@hotmail.com
+2022-05-19T21:05:27.486768+00:00 app[api]: Release v7 created by user alan_ps@hotmail.com
+2022-05-19T21:05:27.486768+00:00 app[api]: Deploy 43713723 by user alan_ps@hotmail.com
+2022-05-19T21:05:28.157621+00:00 heroku[web.1]: State changed from crashed to starting
+2022-05-19T21:05:32.390143+00:00 heroku[web.1]: Starting process with command `node src/server.ts`
+2022-05-19T21:05:33.153419+00:00 app[web.1]: node:internal/errors:464
+2022-05-19T21:05:33.153437+00:00 app[web.1]: ErrorCaptureStackTrace(err);
+2022-05-19T21:05:33.153438+00:00 app[web.1]: ^
+2022-05-19T21:05:33.153438+00:00 app[web.1]:
+2022-05-19T21:05:33.153438+00:00 app[web.1]: TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension 
+".ts" for /app/src/server.ts
+2022-05-19T21:05:33.153439+00:00 app[web.1]: at new NodeError (node:internal/errors:371:5)
+2022-05-19T21:05:33.153446+00:00 app[web.1]: at Object.getFileProtocolModuleFormat [as file:] (node:internal/modules/esm/get_format:87:11)
+2022-05-19T21:05:33.153447+00:00 app[web.1]: at defaultGetFormat (node:internal/modules/esm/get_format:102:38)
+2022-05-19T21:05:33.153447+00:00 app[web.1]: at defaultLoad (node:internal/modules/esm/load:21:14)
+2022-05-19T21:05:33.153447+00:00 app[web.1]: at ESMLoader.load (node:internal/modules/esm/loader:359:26)    
+2022-05-19T21:05:33.153448+00:00 app[web.1]: at ESMLoader.moduleProvider (node:internal/modules/esm/loader:280:58)
+2022-05-19T21:05:33.153448+00:00 app[web.1]: at new ModuleJob (node:internal/modules/esm/module_job:66:26)  
+2022-05-19T21:05:33.153449+00:00 app[web.1]: at ESMLoader.#createModuleJob (node:internal/modules/esm/loader:297:17)
+2022-05-19T21:05:33.153449+00:00 app[web.1]: at ESMLoader.getModuleJob (node:internal/modules/esm/loader:261:34)
+2022-05-19T21:05:33.153449+00:00 app[web.1]: at async Promise.all (index 0) {
+2022-05-19T21:05:33.153450+00:00 app[web.1]: code: 'ERR_UNKNOWN_FILE_EXTENSION'
+2022-05-19T21:05:33.153450+00:00 app[web.1]: }
+2022-05-19T21:05:33.267110+00:00 heroku[web.1]: Process exited with status 1
+2022-05-19T21:05:33.417871+00:00 heroku[web.1]: State changed from starting to crashed
+2022-05-19T21:05:36.000000+00:00 app[api]: Build succeeded
+2022-05-19T21:06:43.302497+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-finauest_id=9593992a-db30-4f66-98e3-92be605066ae fwd="104.219.179.22" dyno= connect= service= status=503 bytes= protocol=htt
+2022-05-19T21:06:43.579710+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" hosapp.com request_id=5869fa0a-1e50-4d8a-9c84-43336645d7fb fwd="104.219.179.22" dyno= connect= service= status=503 bytes= p
+-
+$ heroku logs --tail
+2022-05-19T20:57:07.124502+00:00 app[web.1]: at Object.compileFunction (node:vm:352:18)
+2022-05-19T20:57:07.124502+00:00 app[web.1]: at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+2022-05-19T20:57:07.124503+00:00 app[web.1]: at Module._compile (node:internal/modules/cjs/loader:1067:27)
+2022-05-19T20:57:07.124503+00:00 app[web.1]: at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+2022-05-19T20:57:07.124504+00:00 app[web.1]: at Module.load (node:internal/modules/cjs/loader:981:32)
+2022-05-19T20:57:07.124504+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+2022-05-19T20:57:07.124504+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_m
+2022-05-19T20:57:07.124505+00:00 app[web.1]: at node:internal/main/run_main_module:17:47
+2022-05-19T20:57:07.249482+00:00 heroku[web.1]: Process exited with status 1
+2022-05-19T20:57:07.344144+00:00 heroku[web.1]: State changed from starting to crashed
+2022-05-19T20:57:13.399155+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-finauest_id=98fa65e6-ece6-42ff-8b62-84f19379249c fwd="104.219.179.22" dyno= connect= service= status=503 bytes= protocol=htt
+2022-05-19T20:57:13.711102+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" hosapp.com request_id=2caa9119-e1ff-4f17-866a-4b476d010dcd fwd="104.219.179.22" dyno= connect= service= status=503 bytes= p
+2022-05-19T21:00:15.000000+00:00 app[api]: Build started by user alan_ps@hotmail.com
+2022-05-19T21:01:21.175386+00:00 app[api]: Deploy 1da7cf0a by user alan_ps@hotmail.com
+2022-05-19T21:01:21.175386+00:00 app[api]: Release v6 created by user alan_ps@hotmail.com
+2022-05-19T21:01:22.133744+00:00 heroku[web.1]: State changed from crashed to starting
+2022-05-19T21:01:25.640539+00:00 heroku[web.1]: Starting process with command `node src/server.ts`
+2022-05-19T21:01:26.490117+00:00 app[web.1]: /app/src/server.ts:1
+2022-05-19T21:01:26.490127+00:00 app[web.1]: import mongoose from 'mongoose'
+2022-05-19T21:01:26.490127+00:00 app[web.1]: ^^^^^^
+2022-05-19T21:01:26.490128+00:00 app[web.1]:
+2022-05-19T21:01:26.490128+00:00 app[web.1]: SyntaxError: Cannot use import statement outside a module
+2022-05-19T21:01:26.490128+00:00 app[web.1]: at Object.compileFunction (node:vm:352:18)
+2022-05-19T21:01:26.490129+00:00 app[web.1]: at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+2022-05-19T21:01:26.490129+00:00 app[web.1]: at Module._compile (node:internal/modules/cjs/loader:1067:27)
+2022-05-19T21:01:26.490130+00:00 app[web.1]: at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+2022-05-19T21:01:26.490130+00:00 app[web.1]: at Module.load (node:internal/modules/cjs/loader:981:32)
+2022-05-19T21:01:26.490131+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+2022-05-19T21:01:26.490131+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_m
+2022-05-19T21:01:26.490132+00:00 app[web.1]: at node:internal/main/run_main_module:17:47
+2022-05-19T21:01:26.615123+00:00 heroku[web.1]: Process exited with status 1
+2022-05-19T21:01:26.908696+00:00 heroku[web.1]: State changed from starting to crashed
+2022-05-19T21:01:29.000000+00:00 app[api]: Build succeeded
+2022-05-19T21:04:19.000000+00:00 app[api]: Build started by user alan_ps@hotmail.com
+2022-05-19T21:05:27.486768+00:00 app[api]: Release v7 created by user alan_ps@hotmail.com
+2022-05-19T21:05:27.486768+00:00 app[api]: Deploy 43713723 by user alan_ps@hotmail.com
+2022-05-19T21:05:28.157621+00:00 heroku[web.1]: State changed from crashed to starting
+2022-05-19T21:05:32.390143+00:00 heroku[web.1]: Starting process with command `node src/server.ts`
+2022-05-19T21:05:33.153419+00:00 app[web.1]: node:internal/errors:464
+2022-05-19T21:05:33.153437+00:00 app[web.1]: ErrorCaptureStackTrace(err);
+2022-05-19T21:05:33.153438+00:00 app[web.1]: ^
+2022-05-19T21:05:33.153438+00:00 app[web.1]:
+2022-05-19T21:05:33.153438+00:00 app[web.1]: TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts" for /a
+2022-05-19T21:05:33.153439+00:00 app[web.1]: at new NodeError (node:internal/errors:371:5)
+2022-05-19T21:05:33.153446+00:00 app[web.1]: at Object.getFileProtocolModuleFormat [as file:] (node:internal/modules/esm
+2022-05-19T21:05:33.153447+00:00 app[web.1]: at defaultGetFormat (node:internal/modules/esm/get_format:102:38)
+2022-05-19T21:05:33.153447+00:00 app[web.1]: at defaultLoad (node:internal/modules/esm/load:21:14)
+2022-05-19T21:05:33.153447+00:00 app[web.1]: at ESMLoader.load (node:internal/modules/esm/loader:359:26)
+2022-05-19T21:05:33.153448+00:00 app[web.1]: at ESMLoader.moduleProvider (node:internal/modules/esm/loader:280:58)
+2022-05-19T21:05:33.153448+00:00 app[web.1]: at new ModuleJob (node:internal/modules/esm/module_job:66:26)
+2022-05-19T21:05:33.153449+00:00 app[web.1]: at ESMLoader.#createModuleJob (node:internal/modules/esm/loader:297:17)
+2022-05-19T21:05:33.153449+00:00 app[web.1]: at ESMLoader.getModuleJob (node:internal/modules/esm/loader:261:34)
+2022-05-19T21:05:33.153449+00:00 app[web.1]: at async Promise.all (index 0) {
+2022-05-19T21:05:33.153450+00:00 app[web.1]: code: 'ERR_UNKNOWN_FILE_EXTENSION'
+2022-05-19T21:05:33.153450+00:00 app[web.1]: }
+2022-05-19T21:05:33.267110+00:00 heroku[web.1]: Process exited with status 1
+2022-05-19T21:05:33.417871+00:00 heroku[web.1]: State changed from starting to crashed
+2022-05-19T21:05:36.000000+00:00 app[api]: Build succeeded
+2022-05-19T21:06:43.302497+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-finauest_id=9593992a-db30-4f66-98e3-92be605066ae fwd="104.219.179.22" dyno= connect= service= status=503 bytes= protocol=htt
+2022-05-19T21:06:43.579710+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" hosapp.com request_id=5869fa0a-1e50-4d8a-9c84-43336645d7fb fwd="104.219.179.22" dyno= connect= service= status=503 bytes= p
+2022-05-19T21:14:35.000000+00:00 app[api]: Build started by user alan_ps@hotmail.com
+2022-05-19T21:15:46.821906+00:00 app[api]: Deploy 9e09cf3c by user alan_ps@hotmail.com
+2022-05-19T21:15:46.821906+00:00 app[api]: Release v8 created by user alan_ps@hotmail.com
+2022-05-19T21:15:47.928316+00:00 heroku[web.1]: State changed from crashed to starting
+2022-05-19T21:15:52.117670+00:00 heroku[web.1]: Starting process with command `node src/server.ts`
+2022-05-19T21:15:54.149872+00:00 app[web.1]: /app/src/server.ts:1
+2022-05-19T21:15:54.149889+00:00 app[web.1]: import mongoose from 'mongoose'
+2022-05-19T21:15:54.149890+00:00 app[web.1]: ^^^^^^
+2022-05-19T21:15:54.149890+00:00 app[web.1]:
+2022-05-19T21:15:54.149890+00:00 app[web.1]: SyntaxError: Cannot use import statement outside a module
+2022-05-19T21:15:54.149891+00:00 app[web.1]: at Object.compileFunction (node:vm:352:18)
+2022-05-19T21:15:54.149891+00:00 app[web.1]: at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+2022-05-19T21:15:54.149892+00:00 app[web.1]: at Module._compile (node:internal/modules/cjs/loader:1067:27)
+2022-05-19T21:15:54.149892+00:00 app[web.1]: at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+2022-05-19T21:15:54.149892+00:00 app[web.1]: at Module.load (node:internal/modules/cjs/loader:981:32)
+2022-05-19T21:15:54.149893+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+2022-05-19T21:15:54.149893+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_m
+2022-05-19T21:15:54.149893+00:00 app[web.1]: at node:internal/main/run_main_module:17:47
+2022-05-19T21:15:54.316401+00:00 heroku[web.1]: Process exited with status 1
+2022-05-19T21:15:54.421933+00:00 heroku[web.1]: State changed from starting to crashed
+2022-05-19T21:15:54.425390+00:00 heroku[web.1]: State changed from crashed to starting
+2022-05-19T21:15:57.000000+00:00 app[api]: Build succeeded
+2022-05-19T21:15:57.902789+00:00 heroku[web.1]: Starting process with command `node src/server.ts`
+2022-05-19T21:15:59.515139+00:00 app[web.1]: /app/src/server.ts:1
+2022-05-19T21:15:59.515149+00:00 app[web.1]: import mongoose from 'mongoose'
+2022-05-19T21:15:59.515150+00:00 app[web.1]: ^^^^^^
+2022-05-19T21:15:59.515150+00:00 app[web.1]:
+2022-05-19T21:15:59.515150+00:00 app[web.1]: SyntaxError: Cannot use import statement outside a module
+2022-05-19T21:15:59.515151+00:00 app[web.1]: at Object.compileFunction (node:vm:352:18)
+2022-05-19T21:15:59.515152+00:00 app[web.1]: at wrapSafe (node:internal/modules/cjs/loader:1032:15)  
+2022-05-19T21:15:59.515152+00:00 app[web.1]: at Module._compile (node:internal/modules/cjs/loader:1067:27)7:27)                                                                                                cjs/loader:1157:10)
+2022-05-19T21:15:59.515152+00:00 app[web.1]: at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)                                                                                  er:822:12)
+2022-05-19T21:15:59.515153+00:00 app[web.1]: at Module.load (node:internal/modules/cjs/loader:981:32)ernal/modules/run_m
+
+2022-05-19T21:15:59.515153+00:00 app[web.1]: at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+2022-05-19T21:15:59.515154+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (node:int="/" host=mern-finaernal/modules/run_main:77:12)
+2022-05-19T21:15:59.515154+00:00 app[web.1]: at node:internal/main/run_main_module:17:47             ="/favicon.ico" hos
+2022-05-19T21:15:59.635926+00:00 heroku[web.1]: Process exited with status 1
+2022-05-19T21:15:59.748609+00:00 heroku[web.1]: State changed from starting to crashed
+2022-05-19T21:16:16.611228+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mern-finance-server.herokuapp.com request_id=7a03d07c-8a8a-4299-ade1-e5ed09e2ec27 fwd="104.219.179.22" dyno= connect= service= status=503 bytes= protocol=https
+2022-05-19T21:16:16.948582+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=mern-finance-server.herokuapp.com request_id=79152e44-431d-4e8b-8c2f-478e553be6f3 fwd="104.219.179.22" dyno= connect= service= status=503 bytes= protocol=https
